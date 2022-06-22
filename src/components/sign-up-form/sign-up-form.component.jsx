@@ -14,7 +14,6 @@ const defaultFormFields = {
 };
 const SignUp = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
@@ -43,7 +42,7 @@ const SignUp = () => {
     <div className="sign-up-container">
       <h2>Don't have an account</h2>
       <span>Sign up with your email and password</span>
-      <form>
+      <form onSubmit={handleSubmit}>
         <FormInput
           label="Display Name"
           required
