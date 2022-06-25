@@ -1,14 +1,13 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom';
 
 import Home from "./Routes/Home/Home.component";
-import { Routes, Route } from 'react-router-dom';
 import Navigation from "./Routes/Navigation/Navigation.component";
 import Authentication from "./Routes/authentication/authentication.component";
 import Shop from "./Routes/shop/shop.component";
 import Checkout from "./Routes/checkout/checkout.component";
 
 const App = () => {
-
 
   return (
     <Routes>
